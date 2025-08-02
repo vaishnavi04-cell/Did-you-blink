@@ -1,21 +1,18 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# [Did u Blink] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Vaishnavi B]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
+- Team Lead: vaishnavi B - College of Engineering Attingal
 ### Project Description
-[2-3 lines about what your project does]
-
+Loads a blank screen.Says "Don't blink."
+Then...."you blinked." Everytime.
 ### The Problem (that doesn't exist)
 [What ridiculous problem are you solving?]
 
@@ -25,7 +22,7 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
+- [html]
 - [Frameworks used]
 - [Libraries used]
 - [Tools used]
