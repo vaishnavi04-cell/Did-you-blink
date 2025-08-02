@@ -60,7 +60,7 @@ here showing the result.
 
 ### Project Demo
 # Video
-<video controls src="Did%20You%20Blink_%20and%2017%20more%20pages%20-%20Personal%20-%20Microsoft%E2%80%8B%20Edge%202025-08-02%2004-34-53.mp4" title="Title"></video>
+<video controls src="vid.mp4" title="Title"></video>
 *the first opening page shows the description and camera access method then allow the camera web and blink the eyes 4 to 5 times and a texting like (blink properly) and finally 5 seconds make it fun.*
 
 
