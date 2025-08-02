@@ -10,84 +10,62 @@
 
 ### Team Members
 - Team Lead: vaishnavi B - College of Engineering Attingal
+
 ### Project Description
-Loads a blank screen.Says "Don't blink."
-Then...."you blinked." Everytime.
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+this is a useless project where the user will be ask to give for camera access . after getting access, the user will be asked to blink in front of the camera . after 10 seconds the user will be pranked by saying "you wasted 10 seconds successfully".
+
+
+### The Problem 
+This website will reduce boredom
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+This website will reduce boredom by pranking people.
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
 - [html]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- [Tools used] visual studio code
+
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+live server
 
 # Run
-[commands]
+run button
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+## Screenshot 1
+<img width="1024" height="512" alt="Homr" src="Screenshot (4).png" />
+This is the first opening page.here the website shows the camera access method
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+## screenshot 2
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+<img width="1024" height="512" alt="Homr" src="Screenshot (5).png" />
+after allowing the camera access blink the eyes 4 to 5 times
 
-For Hardware:
+##screenshot 3
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+<img width="1024" height="512" alt="Homr" src="Screenshot (6).png" />
+here showing the result.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+[Add your demo video link here]<video controls src="Did You Blink_ and 17 more pages - Personal - Microsoft​ Edge 2025-08-02 04-34-53.mp4" title="Title"></video>
+*the first opening page shows the description and camera access method then allow the camera web and blink the eyes 4 to 5 times and a texting like (blink properly) and finally 5 seconds make it fun.*
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Vaishnavi B : VS Code, Github
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

@@ -49,6 +49,58 @@
       font-family: cursive;
     }
     .blinked { font-size: 32px !important; color: #e74c3c !important; }
+    .camera-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .camera-message {
+      font-size: 22px;
+      color: #d6336c;
+      font-family: cursive;
+      margin-bottom: 8px;
+      margin-top: 8px;
+    }
+    #timed-message {
+      font-size: 24px;
+      color: #d6336c;
+      font-family: cursive;
+      margin-top: 20px;
+      min-height: 32px;
+      transition: opacity 0.5s;
+    }
+    .small-cam { 
+      width: 320px !important; 
+      height: 240px !important; 
+      border-radius: 16px; 
+      box-shadow: 0 2px 12px #ffb6c1;
+      margin: 0 auto 10px auto;
+      display: block;
+    }
+    .small-canvas {
+      width: 320px !important;
+      height: 240px !important;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #ffb6c1;
+    }
+    #cat-gif {
+      display: none;
+      margin: 20px auto 0 auto;
+      width: 120px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #ffb6c1;
+    }
+    #bye-message {
+      font-size: 24px;
+      color: #d6336c;
+      font-family: cursive;
+      margin-top: 20px;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -56,10 +108,16 @@
     <img id="mainPic" src="c:\Users\user\Downloads\photo_6084459351545857901_x.jpg" alt="Main Picture">
   </div>
   <h1>Did You Blink?</h1>
-  <video id="video" width="640" height="480" autoplay muted></video>
-  <canvas id="output" width="640" height="480"></canvas>
+  <div class="camera-container">
+    <video id="video" class="small-cam" width="320" height="240" autoplay muted></video>
+    <canvas id="output" class="small-canvas" width="320" height="240"></canvas>
+    <div class="camera-message" id="cameraMessage">Smile and look at the camera</div>
+  </div>
   <div id="status">Initializing...</div>
+  <img id="cat-gif" src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif" alt="Cat Hi Kiss">
   <div id="blink-status"></div>
+  <div id="timed-message"></div>
+  <div id="bye-message">Now you wasted your 10 sec... bye 👋</div>
 
   <!-- MediaPipe Face Mesh -->
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
@@ -72,10 +130,28 @@
     const statusText = document.getElementById('status');
     const blinkStatus = document.getElementById('blink-status');
     const mainPic = document.getElementById('mainPic');
+    const cameraMessage = document.getElementById('cameraMessage');
+    const timedMessage = document.getElementById('timed-message');
+    const catGif = document.getElementById('cat-gif');
+    const byeMessage = document.getElementById('bye-message');
 
     let blinkCount = 0;
     let lastBlink = Date.now();
     let fakeCount = 0; // Track first few attempts
+
+    // Timed messages logic
+    setTimeout(() => {
+      timedMessage.innerText = "You did not blink properly";
+    }, 10000);
+
+    setTimeout(() => {
+      statusText.style.display = "none"; // Hide the initializing text
+      catGif.style.display = "block";    // Show the cat gif
+    }, 20000);
+
+    setTimeout(() => {
+      byeMessage.style.display = "block";
+    }, 30000);
 
     function distance(a, b) {
       return Math.sqrt((a.x - b.x)**2 + (a.y - b.y)**2);
@@ -144,13 +220,12 @@
       onFrame: async () => {
         await faceMesh.send({image: video});
       },
-      width: 640,
-      height: 480
+      width: 320,
+      height: 240
     });
 
     faceMesh.onResults = onResults;
     camera.start();
-    statusText.innerText = 'Smile and look at the camera';
   </script>
 </body>
 </html>
