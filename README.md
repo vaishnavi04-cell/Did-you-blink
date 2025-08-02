@@ -60,7 +60,7 @@ here showing the result.
 
 ### Project Demo
 # Video
-<video controls src="vid.mp4" title="Title"></video>
+<video controls src="video.mp4" title="Title"></video>
 *the first opening page shows the description and camera access method then allow the camera web and blink the eyes 4 to 5 times and a texting like (blink properly) and finally 5 seconds make it fun.*
 
 
